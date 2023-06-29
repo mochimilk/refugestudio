@@ -67,6 +67,7 @@ a:hover {
   opacity: 0.9;
   visibility: visible;
   pointer-events: none;
+  z-index: -1;
 }
 
 @keyframes bg-animation {
@@ -113,6 +114,12 @@ a:hover {
   padding: 64px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .hello {
+    gap: 24px;
+    padding: 32px;
+  }
+}
 @media only screen and (max-width: 800px) {
   .hello {
     gap: 16px;
@@ -153,6 +160,12 @@ a:hover {
   width: 100%;
 }
 
+@media only screen and (max-width: 1200px) {
+  .masthead-footer {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
 @media only screen and (max-width: 800px) {
   .masthead-footer {
     grid-template-columns: 1fr;
@@ -204,6 +217,19 @@ a:hover {
   opacity: 0.6;
 }
 
+@media only screen and (max-width: 1200px) {
+  .showcase-top, .showcase {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    padding: 32px;
+  }
+  .showcase-component-lg img {
+    height: 25vw;
+  }
+  .showcase-component-sm img {
+    height: 25vw;
+  }
+}
 @media only screen and (max-width: 800px) {
   .showcase-top, .showcase {
     grid-template-columns: 1fr;
@@ -225,6 +251,13 @@ a:hover {
   border-bottom: 1px solid #e8e8e8;
 }
 
+@media only screen and (max-width: 1200px) {
+  .divider {
+    margin: 0 32px 0 32px;
+    padding-bottom: 24px;
+    padding-top: 48px;
+  }
+}
 @media only screen and (max-width: 800px) {
   .divider {
     margin: 0 24px 0 24px;
@@ -240,6 +273,15 @@ footer svg {
   height: 16px;
 }
 
+@media only screen and (max-width: 1200px) {
+  footer {
+    padding: 32px;
+    margin-top: 48px;
+  }
+  footer svg {
+    height: 16px;
+  }
+}
 @media only screen and (max-width: 800px) {
   footer {
     padding: 24px;

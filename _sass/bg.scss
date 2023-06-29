@@ -12,6 +12,7 @@
     opacity: .9;
     visibility: visible;
     pointer-events: none;
+    z-index: -1;
   }
   
   @keyframes bg-animation {

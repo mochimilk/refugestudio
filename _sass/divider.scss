@@ -7,6 +7,14 @@ border-bottom: 1px solid $bodyColor;
 }
 
 
+@media only screen and (max-width: $media-md) {
+    .divider {
+        margin:  0 $padding-md 0 $padding-md;
+        padding-bottom: 24px;
+        padding-top: 48px;
+    }
+}
+
 @media only screen and (max-width: $media-sm) {
     .divider {
         margin:  0 $padding-sm 0 $padding-sm;
@@ -14,3 +22,4 @@ border-bottom: 1px solid $bodyColor;
         padding-top: 48px;
     }
 }
+

@@ -45,6 +45,27 @@
     }
 }
 
+@media only screen and (max-width: $media-md) {
+    .showcase-top, .showcase {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+        padding: $padding-md;
+    }
+
+
+    .showcase-component-lg {
+        img {
+            height: 25vw;
+        }
+    }
+
+    .showcase-component-sm {
+        img {
+            height: 25vw;
+        }
+    }
+}
+
 
 @media only screen and (max-width: $media-sm) {
     .showcase-top, .showcase {
@@ -65,3 +86,4 @@
         }
     }
 }
+

@@ -7,9 +7,17 @@
     padding: $padding-lg;
 }
 
+@media only screen and (max-width: $media-md) {
+    .hello {
+        gap: 24px;
+        padding: $padding-md;
+    }
+}
+
 @media only screen and (max-width: $media-sm) {
     .hello {
         gap: 16px;
         padding: $padding-sm;
     }
 }
+
