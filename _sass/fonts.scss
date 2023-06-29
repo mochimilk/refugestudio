@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Cirka';
+  src: url('../fonts/PPCirka-Variable.ttf') format('truetype');
+}
+
+h1{
+  font-family: 'Cirka';
+  font-size: 48px;
+  font-weight: 500;
+  margin: 0;
+}
+
+h3 {
+  font-family: 'Cirka';
+  font-size: 26px;
+  font-weight: 300;
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
+a {
+  text-decoration: underline;
+  color: $bodyColor;
+}
+
+a:hover {
+  text-decoration: none;
+}

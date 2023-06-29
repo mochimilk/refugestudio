@@ -1,0 +1,15 @@
+.hello {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    gap: 32px;
+    padding: $padding-lg;
+}
+
+@media only screen and (max-width: $media-sm) {
+    .hello {
+        gap: 16px;
+        padding: $padding-sm;
+    }
+}

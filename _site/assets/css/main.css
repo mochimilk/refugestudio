@@ -1,0 +1,253 @@
+::selection {
+  background: #00ffa3;
+}
+
+::-moz-selection {
+  background: #00ffa3;
+}
+
+body {
+  background: #0f0f0f;
+  color: #e8e8e8;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Cirka";
+  src: url("../fonts/PPCirka-Variable.ttf") format("truetype");
+}
+h1 {
+  font-family: "Cirka";
+  font-size: 48px;
+  font-weight: 500;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Cirka";
+  font-size: 26px;
+  font-weight: 300;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: underline;
+  color: #e8e8e8;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent url("http://assets.iceable.com/img/noise-transparent.png") repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation 0.2s infinite;
+  opacity: 0.9;
+  visibility: visible;
+  pointer-events: none;
+}
+
+@keyframes bg-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -5%);
+  }
+  20% {
+    transform: translate(-10%, 5%);
+  }
+  30% {
+    transform: translate(5%, -10%);
+  }
+  40% {
+    transform: translate(-5%, 15%);
+  }
+  50% {
+    transform: translate(-10%, 5%);
+  }
+  60% {
+    transform: translate(15%, 0);
+  }
+  70% {
+    transform: translate(0, 10%);
+  }
+  80% {
+    transform: translate(-15%, 0);
+  }
+  90% {
+    transform: translate(10%, 5%);
+  }
+  100% {
+    transform: translate(5%, 0);
+  }
+}
+.hello {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  gap: 32px;
+  padding: 64px;
+}
+
+@media only screen and (max-width: 800px) {
+  .hello {
+    gap: 16px;
+    padding: 24px;
+  }
+}
+.masthead-logo {
+  width: 100%;
+}
+.masthead-logo svg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.masthead-img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.masthead-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.masthead-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.masthead-footer h1 {
+  width: 100%;
+}
+.masthead-footer h3 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .masthead-footer {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+.showcase-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 32px;
+  width: 100%;
+  padding: 64px;
+}
+
+.showcase {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+  width: 100%;
+  padding: 0 64px 64px 64px;
+}
+
+.showcase-component-lg {
+  width: 100%;
+}
+.showcase-component-lg img {
+  width: 100%;
+  height: 30vw;
+  object-fit: cover;
+}
+
+.showcase-component-sm {
+  width: 100%;
+}
+.showcase-component-sm img {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+}
+
+.showcase-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  margin-top: 16px;
+  gap: 16px;
+}
+.showcase-meta p {
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 800px) {
+  .showcase-top, .showcase {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 24px;
+  }
+  .showcase-component-lg img {
+    height: 50vw;
+  }
+  .showcase-component-sm img {
+    height: 50vw;
+  }
+}
+.divider {
+  opacity: 0.6;
+  margin: 0 64px 0 64px;
+  padding-bottom: 16px;
+  padding-top: 64px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+@media only screen and (max-width: 800px) {
+  .divider {
+    margin: 0 24px 0 24px;
+    padding-bottom: 24px;
+    padding-top: 48px;
+  }
+}
+footer {
+  padding: 64px;
+  margin-top: 64px;
+}
+footer svg {
+  height: 16px;
+}
+
+@media only screen and (max-width: 800px) {
+  footer {
+    padding: 24px;
+    margin-top: 48px;
+  }
+  footer svg {
+    height: 16px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

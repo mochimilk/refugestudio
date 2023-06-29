@@ -1,0 +1,32 @@
+$backgroundColor: #0f0f0f;
+$bodyColor: #e8e8e8;
+$primaryGreen: #00ffa3;
+$bodyFont: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+$padding-lg: 64px;
+$padding-sm: 24px;
+$media-sm: 800px;
+
+::selection {
+  background: $primaryGreen;
+}
+::-moz-selection {
+  background: $primaryGreen;
+}
+
+body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
