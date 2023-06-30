@@ -27,6 +27,7 @@
 
 .showcase-component-sm {
     width: 100%;
+
     img {
         width: 100%;
         height: 15vw;
@@ -40,18 +41,20 @@
     width: 100%;
     margin-top: 16px;
     gap: 16px;
+
     p {
         opacity: .6;
     }
 }
 
 @media only screen and (max-width: $media-md) {
-    .showcase-top, .showcase {
+
+    .showcase-top,
+    .showcase {
         grid-template-columns: 1fr 1fr;
         gap: 24px;
         padding: $padding-md;
     }
-
 
     .showcase-component-lg {
         img {
@@ -68,7 +71,9 @@
 
 
 @media only screen and (max-width: $media-sm) {
-    .showcase-top, .showcase {
+
+    .showcase-top,
+    .showcase {
         grid-template-columns: 1fr;
         gap: 32px;
         padding: $padding-sm;
@@ -86,4 +91,3 @@
         }
     }
 }
-

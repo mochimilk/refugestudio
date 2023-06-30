@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <title>{{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
-    <link rel="icon" type="image/x-icon" href="{{ '/assets/favicon/favicon.ico?' | relative_url }}">
-  </head>
-  <body>
-    <div class="bg"></div>
+<html lang="{{ site.lang | default: " en-US" }}">
 
-    {% include masthead.html %}
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ " /assets/css/main.css" | relative_url }}">
+  <link rel="icon" type="image/x-icon" href="{{ '/assets/favicon/favicon.ico?' | relative_url }}">
+</head>
+
+<body>
+  <div class="bg"></div>
+  {% include masthead.html %}
+  {% include showcase.html %}
+  {% include inquiries.html %}
+  {% include footer.html %}
 
 
-{% include showcase.html %}
+  <!-- {{ content }} -->
+</body>
 
-{% include footer.html %}
-
-    <!-- {{ content }} -->
-  </body>
 </html>

@@ -1,0 +1,39 @@
+.duo-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 32px;
+    padding: $padding-lg;
+
+    div {
+        font-size: 26px;
+        width: 50%;
+    }
+}
+
+.mono-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 32px;
+    padding: $padding-lg;
+}
+
+@media only screen and (max-width: $media-md) {
+    .duo-col {
+        gap: 24px;
+        padding: $padding-md;
+
+        div {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: $media-sm) {
+    .duo-col {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: $padding-sm;
+    }
+}

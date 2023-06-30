@@ -33,14 +33,22 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0;
+}
+
 h3 {
   font-family: "Cirka";
   font-size: 26px;
   font-weight: 300;
   margin: 0;
+  line-height: 115%;
 }
 
 p {
+  font-size: 17px;
   margin: 0;
 }
 
@@ -218,7 +226,8 @@ a:hover {
 }
 
 @media only screen and (max-width: 1200px) {
-  .showcase-top, .showcase {
+  .showcase-top,
+  .showcase {
     grid-template-columns: 1fr 1fr;
     gap: 24px;
     padding: 32px;
@@ -231,7 +240,8 @@ a:hover {
   }
 }
 @media only screen and (max-width: 800px) {
-  .showcase-top, .showcase {
+  .showcase-top,
+  .showcase {
     grid-template-columns: 1fr;
     gap: 32px;
     padding: 24px;
@@ -249,6 +259,7 @@ a:hover {
   padding-bottom: 16px;
   padding-top: 64px;
   border-bottom: 1px solid #e8e8e8;
+  font-size: 17px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -290,6 +301,78 @@ footer svg {
   footer svg {
     height: 16px;
   }
+}
+.duo-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 32px;
+  padding: 64px;
+}
+.duo-col div {
+  font-size: 26px;
+  width: 50%;
+}
+
+.mono-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  gap: 32px;
+  padding: 64px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .duo-col {
+    gap: 24px;
+    padding: 32px;
+  }
+  .duo-col div {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .duo-col {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 24px;
+  }
+}
+ul li {
+  list-style: none;
+}
+
+.toggle-menu {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.toggle-menu > li:first-child {
+  border: none;
+}
+
+.toggle-menu > li {
+  position: relative;
+  border-top: 1px solid rgba(232, 232, 232, 0.1882352941);
+  padding: 32px 0px 32px 0px;
+}
+
+.toggle-menu .link a {
+  position: relative;
+  display: block;
+  font-family: "Cirka";
+  font-size: 26px;
+  text-decoration: none;
+}
+
+.submenu {
+  display: none;
+  background: none;
+  padding-top: 32px;
+  opacity: 0.6;
+  font-size: 18px;
+  width: 50%;
 }
 
 /*# sourceMappingURL=main.css.map */
