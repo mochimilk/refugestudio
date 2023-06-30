@@ -1,6 +1,5 @@
 .masthead-logo {
     width: 100%;
-
     svg {
         top: 0;
         left: 0;
@@ -8,6 +7,9 @@
         height: 100%;
     }
 }
+
+
+
 
 .masthead-img {
     display: flex;
@@ -35,6 +37,7 @@
         width: 100%;
     }
 }
+
 
 @media only screen and (max-width: $media-md) {
     .masthead-footer {
