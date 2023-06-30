@@ -13,16 +13,3 @@
 </div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-<script>
-    $(function () {
-        $('.toggle-menu li').click(function () {
-            $(this).toggleClass(' active ');
-            $(this).siblings().removeClass(' active ');
-            $('.submenu').stop().slideUp();
-            $('.active .submenu').stop().slideDown();
-            return false;
-        });
-    });
-
-</script>
