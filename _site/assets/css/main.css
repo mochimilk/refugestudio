@@ -271,12 +271,13 @@ footer svg {
   gap: 32px;
   width: 100%;
   padding: 64px;
+  margin-bottom: 64px;
 }
 
 .showcase {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 64px 32px;
+  gap: 128px 32px;
   width: 100%;
   padding: 0 64px 64px 64px;
 }
@@ -336,6 +337,37 @@ footer svg {
   }
   .showcase-component-sm img {
     height: 50vw;
+  }
+}
+.clients {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  padding: 64px;
+}
+
+.client-container {
+  width: 100%;
+  border-left: 1px solid rgba(232, 232, 232, 0.3764705882);
+  border-top: 1px solid rgba(232, 232, 232, 0.3764705882);
+  padding-left: 48px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .clients {
+    padding: 32px;
+  }
+  .client-container {
+    padding-left: 32px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .clients {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+  .client-container {
+    padding-left: 16px;
   }
 }
 

@@ -4,12 +4,13 @@
     gap: 32px;
     width: 100%;
     padding: $padding-lg;
+    margin-bottom: 64px;
 }
 
 .showcase {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 64px 32px;
+    gap: 128px 32px;
     width: 100%;
     padding: 0 $padding-lg $padding-lg $padding-lg;
 }
