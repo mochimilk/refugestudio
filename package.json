@@ -1,0 +1,26 @@
+{
+  "name": "refugestudio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tinacms dev -c \"jekyll server -D\"",
+    "build": "tinacms build && jekyll",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mochimilk/refugestudio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mochimilk/refugestudio/issues"
+  },
+  "homepage": "https://github.com/mochimilk/refugestudio#readme",
+  "dependencies": {
+    "@tinacms/cli": "^1.5.26",
+    "tinacms": "^1.5.17"
+  }
+}
